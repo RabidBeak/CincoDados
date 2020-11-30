@@ -11,11 +11,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4f9bfcf8-b423-40fb-a447-3395bde56ea6" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/cincodados/ConfiguracionActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/cincodados/ConfiguracionActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/cincodados/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/cincodados/MainActivity.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_configuracion.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_configuracion.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,6 +36,13 @@
       </state>
     </system>
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -49,7 +57,7 @@
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Catanclismo" />
   </component>
   <component name="RecentsManager">
     <key name="android.template.1208706218">
@@ -136,6 +144,10 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
+    <state x="765" y="203" key="#com.intellij.ide.util.MemberChooser" timestamp="1606697777781">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="765" y="203" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1606697777781" />
     <state x="640" y="255" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1601657490600">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -144,9 +156,29 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="690" y="266" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1602640433461" />
-    <state x="740" y="274" key="FileChooserDialogImpl" timestamp="1605230992487">
+    <state x="540" y="274" key="AndroidCreateResourceDirectoryDialog" timestamp="1606696679264">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="740" y="274" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1605230992487" />
+    <state x="540" y="274" key="AndroidCreateResourceDirectoryDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1606696679264" />
+    <state x="740" y="274" key="FileChooserDialogImpl" timestamp="1606698579992">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="740" y="274" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1606698579992" />
+    <state width="1877" height="232" key="GridCell.Tab.0.bottom" timestamp="1606699022774">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="232" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1606699022774" />
+    <state width="1877" height="232" key="GridCell.Tab.0.center" timestamp="1606699022773">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="232" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1606699022773" />
+    <state width="1877" height="232" key="GridCell.Tab.0.left" timestamp="1606699022773">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="232" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1606699022773" />
+    <state width="1877" height="232" key="GridCell.Tab.0.right" timestamp="1606699022773">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="232" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1606699022773" />
   </component>
 </project>

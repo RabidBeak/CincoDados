@@ -5,6 +5,7 @@ import androidx.constraintlayout.widget.ConstraintLayout;
 
 import android.annotation.SuppressLint;
 import android.content.Intent;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.MotionEvent;
@@ -21,12 +22,18 @@ public class MainActivity extends AppCompatActivity {
     Button btn_RodarDados;
     int [] valor_dado = new int[7];
     int total_dados = 5;
+    public MediaPlayer sonido_dado;
+    boolean sonido_encendido = false;
 
     @SuppressLint("ClickableViewAccessibility")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        sonido_dado = MediaPlayer.create(this, R.raw.dice_throw);
+        VariablesGlobales variablesGlobales = (VariablesGlobales) getApplicationContext();
+        sonido_encendido = variablesGlobales.isSonido();
 
         img_dado[1] = findViewById(R.id.img_dado1);
         img_dado[2] = findViewById(R.id.img_dado2);
@@ -209,6 +216,9 @@ public class MainActivity extends AppCompatActivity {
     public void RodarDados(){
         if(total_dados > 0){
             for(int i = 1; i <= total_dados; i++){
+                if(sonido_encendido){
+                    sonido_dado.start();
+                }
                 Random azar = new Random();
                 int azar_numero = azar.nextInt(6);
                 azar_numero++;

@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">Cinco Dados</string>
+    <string name="title_config">Configuración</string>
+    <string name="soundOnOff_config">Sonido</string>
+    <string name="title_development">Desarrollo</string>
+    <string name="author">Desarrollado por Rabid Beak</string>
+    <string name="author_email">rabid.beak@gmail.com</string>
+    <string name="contributor_sound">Sonido obtenido de Zapsplat.com</string>
 </resources>
