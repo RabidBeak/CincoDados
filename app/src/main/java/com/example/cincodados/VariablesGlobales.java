@@ -11,4 +11,5 @@ public class VariablesGlobales extends Application{
     public void setSonido(boolean sonido) {
         this.sonido = sonido;
     }
+
 }

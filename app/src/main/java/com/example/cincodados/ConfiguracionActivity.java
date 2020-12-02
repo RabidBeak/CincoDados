@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Switch;
 
@@ -25,8 +26,7 @@ public class ConfiguracionActivity extends AppCompatActivity {
     public void clickAtras(View view){
         VariablesGlobales variablesGlobales = (VariablesGlobales) getApplicationContext();
         variablesGlobales.setSonido(switch_config_sonido.isChecked());
-        Intent intent = new Intent(ConfiguracionActivity.this, MainActivity.class);
-        startActivity(intent);
+        super.onBackPressed();
     }
 
 }

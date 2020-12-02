@@ -18,12 +18,16 @@ import java.util.Random;
 
 public class MainActivity extends AppCompatActivity {
 
+    //region Declaración de variables
+
     ImageView[] img_dado = new ImageView[6];
     Button btn_RodarDados;
     int [] valor_dado = new int[7];
     int total_dados = 5;
     public MediaPlayer sonido_dado;
     boolean sonido_encendido = false;
+
+    //endregion
 
     @SuppressLint("ClickableViewAccessibility")
     @Override
@@ -32,8 +36,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         sonido_dado = MediaPlayer.create(this, R.raw.dice_throw);
-        VariablesGlobales variablesGlobales = (VariablesGlobales) getApplicationContext();
-        sonido_encendido = variablesGlobales.isSonido();
+        total_dados = 5;
 
         img_dado[1] = findViewById(R.id.img_dado1);
         img_dado[2] = findViewById(R.id.img_dado2);
@@ -68,6 +71,49 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+    }
+
+    //region Acciones de interfaz
+
+    public void clickConfiguracion(View view){
+        Intent intent = new Intent(MainActivity.this, ConfiguracionActivity.class);
+        startActivity(intent);
+    }
+
+    public void clickRestarDado(View view){
+        if(total_dados > 0){
+            valor_dado[total_dados] = 0;
+            total_dados = total_dados - 1;
+        }
+        ActualizarDados();
+    }
+
+    public void clickAgregarDado(View view){
+        if(total_dados < 5){
+            valor_dado[total_dados + 1] = 1;
+            total_dados = total_dados + 1;
+        }
+        ActualizarDados();
+    }
+
+    //endregion
+
+    //region Funciones generales
+
+    public void RodarDados(){
+        VariablesGlobales variablesGlobales = (VariablesGlobales) getApplicationContext();
+        if(total_dados > 0){
+            for(int i = 1; i <= total_dados; i++){
+                if(variablesGlobales.isSonido()){
+                    sonido_dado.start();
+                }
+                Random azar = new Random();
+                int azar_numero = azar.nextInt(6);
+                azar_numero++;
+                valor_dado[i] = azar_numero;
+                ActualizarDados();
+            }
+        }
     }
 
     private void ActualizarDados() {
@@ -192,40 +238,6 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
-    public void clickConfiguracion(View view){
-        Intent intent = new Intent(MainActivity.this, ConfiguracionActivity.class);
-        startActivity(intent);
-    }
-
-    public void clickRestarDado(View view){
-        if(total_dados > 0){
-            valor_dado[total_dados] = 0;
-            total_dados = total_dados - 1;
-        }
-        ActualizarDados();
-    }
-
-    public void clickAgregarDado(View view){
-        if(total_dados < 5){
-            valor_dado[total_dados + 1] = 1;
-            total_dados = total_dados + 1;
-        }
-        ActualizarDados();
-    }
-
-    public void RodarDados(){
-        if(total_dados > 0){
-            for(int i = 1; i <= total_dados; i++){
-                if(sonido_encendido){
-                    sonido_dado.start();
-                }
-                Random azar = new Random();
-                int azar_numero = azar.nextInt(6);
-                azar_numero++;
-                valor_dado[i] = azar_numero;
-                ActualizarDados();
-            }
-        }
-    }
+    //endregion
 
 }
